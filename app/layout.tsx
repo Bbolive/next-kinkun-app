@@ -8,8 +8,8 @@ const prompt = Prompt({
 });
  
 export const metadata: Metadata = {
-  title: "Mange Task App",
-  description: "บันทึกงานและสถานะงานที่ทำ",
+  title: "Kinkun App (Supabase)",
+  description: "บันทึกการกิน",
 };
  
 export default function RootLayout({

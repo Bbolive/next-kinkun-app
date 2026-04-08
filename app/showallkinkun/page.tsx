@@ -191,10 +191,7 @@ export default function Page() {
         </table>
 
         {/* ส่วนปุ่มออกจากการใช้งาน */}
-        <Link
-          href={"/app/page.tsx"}
-          className="mt-3 text-blue-500"
-        >
+        <Link href={"/"} className="mt-3 text-blue-500">
           ออกจากการใช้งาน
         </Link>
       </div>
