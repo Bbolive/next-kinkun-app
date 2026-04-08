@@ -155,7 +155,7 @@ export default function Page() {
 
         {/* ส่วนเลือกรูป และแสดงรูป */}
         <div className="w-full flex flex-col mt-5">
-          <h1>อัปโหลดรูป</h1>
+          <h1>รูปอาหาร</h1>
           <input
             id="selectImage"
             type="file"

@@ -107,14 +107,14 @@ export default function Page() {
                  border border-gray-400 rounded-xl
                  flex flex-col justify-center items-center"
       >
-        {/* แสดงรูปจาก assets ในโปรเจ็กต์ */}
-        <Image src={logoimg} alt="logo" width={100} height={100} />
 
         {/* แสดงชื่อแอปฯ + การทำงาน */}
-        <h1 className="mt-5 text-2xl font-bold text-blue-700">
+        <h1 className="mt-5 text-xl font-bold text-blue-700">
           Kinkun APP (Supabase)
         </h1>
-        <h1 className="mt-3 text-lg text-blue-700">ข้อมูลการกิน</h1>
+        <h1 className=" text-xl font-bold text-blue-700">ข้อมูลการกิน</h1>
+        {/* แสดงรูปจาก assets ในโปรเจ็กต์ */}
+        <Image className="mt-5" src={logoimg} alt="logo" width={100} height={100} />
 
         {/* แสดงปุ่มเพิ่มงาน  */}
         <div className="w-full mt-5 flex justify-end">
@@ -132,7 +132,7 @@ export default function Page() {
           <thead>
             <tr className="bg-gray-200">
               <th className="border border-gray-500 p-2">รูป</th>
-              <th className="border border-gray-500 p-2">ชื่อเมนู</th>
+              <th className="border border-gray-500 p-2">ชื่อเมนูอาหาร</th>
               <th className="border border-gray-500 p-2">สถานที่</th>
               <th className="border border-gray-500 p-2">ราคา</th>
               <th className="border border-gray-500 p-2">วันที่</th>
@@ -164,14 +164,14 @@ export default function Page() {
                 <td className="border border-gray-500 p-2 text-center">
                   {new Date(item.created_at).toLocaleString("th-TH", {
                     year: "numeric",
-                    month: "long",
+                    month: "numeric",
                     day: "numeric",
                   })}
                 </td>
                 <td className="border border-gray-500 p-2 text-center">
                   <Link
                     href={`/updatekinkun/${item.id}`}
-                    className="text-green-500 hover:underline"
+                    className="text-green-500 hover:underline "
                   >
                     แก้ไข
                   </Link>
