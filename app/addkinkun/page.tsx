@@ -190,7 +190,7 @@ export default function Page() {
           className="w-full px-4 py-2 bg-blue-600 text-white
                         hover:bg-blue-600 rounded mt-5 cursor-pointer"
         >
-          บันทึกงานใหม่
+          บันทึกข้อมูลการกิน
         </button>
 
         {/* ส่วนปุ่มกลับไปหน้า /showallkinkun */}
